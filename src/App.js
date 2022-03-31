@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NewForm from "./Components/Forms/NewForm";
+import SignIn2 from "./Components/Forms/Sign-in2";
+import DoctorDetails from "./Components/DoctorDetails";
+import LandingRep from "./Components/LandingRep";
+import ChatDoc1 from "./Components/ChatDoc1";
+import { Component } from "react/cjs/react.production.min";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<SignIn2 />} />
+            <Route path="/landing-rep" element={<LandingRep />} />
+            <Route path="/doc-details" element={<DoctorDetails />} />
+            <Route path="/doc-chat" element={<ChatDoc1 />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -36,3 +36,124 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.box {
+  border-radius: 10%;
+  padding: 20px;
+  border: 5px #aaaaaa;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.widget {
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgb(156, 156, 156);
+}
+.round-btn {
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+}
+.backBtn {
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+}
+.headerBtn {
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+.arrow {
+  background: rgb(10, 175, 81);
+  float: right;
+  position: absolute;
+}
+.reply-btn {
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+  background: rgb(5, 209, 5);
+}
+.widget-btn {
+  border: none;
+  padding: 10px;
+  background: none;
+}
+.logo-icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 80px;
+}
+.chat-header {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background: springgreen;
+}
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.incoming {
+  margin: 20px;
+  width: 50%;
+  min-height: 50px;
+  float: left;
+  align-content: flex-start;
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgb(156, 156, 156);
+}
+.outgoing {
+  margin: 20px;
+  margin-left: 45%;
+  margin-right: 10%;
+  align-content: flex-end;
+  width: 50%;
+  min-height: 50px;
+  justify-self: left;
+  float: right;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgb(156, 156, 156);
+  background: rgb(100, 187, 13);
+}
+.reply-sec {
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  /* newcss */
+}
+.reply-box {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 50px;
+  border-radius: 25px;
+}
